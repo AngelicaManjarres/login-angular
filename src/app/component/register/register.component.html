@@ -1,0 +1,23 @@
+<div>
+    <h1>Register</h1>
+
+<form (ngSubmit)="createUser(user)" #user="ngForm">
+    <input name="name" type="text" placeholder="Name" [(ngModel)]="newUser.name" #name="ngModel" required minlength="3">
+    <p *ngIf="name.invalid && name.touched">The name must contain at least 3 characters </p>
+
+    <input name="username" type="text" placeholder="Username" [(ngModel)]="newUser.username" #username="ngModel" required minlength="6" maxlength="12">
+    <p *ngIf="username.invalid && username.touched">The username must contain at least 6 characters </p>
+
+    <input name="password" type="password" placeholder="Password" [(ngModel)]="newUser.password" #password="ngModel" required minlength="8" maxlength="16">
+    <p *ngIf="password.invalid && password.touched">The password must be at least 8 char long</p>
+
+    <input (change)="checkMatch()" name="repassword" type="password" placeholder="Confirm password" [(ngModel)]="repassword">
+    <p *ngIf="unmatch">The passwords don't match</p>
+
+    <a routerLink="/">You already have an account?</a>
+
+    <div>
+        <button type="submit">Register</button>
+    </div>
+</form>
+</div>

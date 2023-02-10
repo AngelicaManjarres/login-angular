@@ -1,0 +1,12 @@
+h2 {
+    margin: 2rem 0;
+}
+
+button {
+    margin-top: 1rem;
+    border: 2px solid crimson;
+    border-radius: 40px;
+    background: #444;
+    padding: 10px 20px;
+    cursor: pointer;
+}

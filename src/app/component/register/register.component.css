@@ -1,0 +1,38 @@
+div { 
+    text-align: center;
+}
+
+h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+input {
+    width: 100%;
+    background: #444444;
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+p {
+    color: rgb(231, 142, 209);
+    text-align: left;
+    padding-top: 5px;
+}
+
+button {
+    margin-top: 60px;
+    padding: 14px 40px;
+    background: #444444;
+    border: 2px solid #4FEF41;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
